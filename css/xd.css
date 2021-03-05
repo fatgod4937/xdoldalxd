@@ -1,78 +1,157 @@
-header{
-  background:url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/header/bg-wool-dark.png);
-  padding:50px;
-  width:100%;
+body,
+html {
+  background: #1c1c1c;
+}
+
+header {
+  background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/header/bg-wool-dark.png);
+  padding: 50px;
+  width: 100%;
 }
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-    .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .logo{
-    height:70%;
-  }
-  .dropdown:hover .dropdown-content {display: block;}
-  ul li{
-      display:inline;
-      list-style-type:none;
-  }
-  
-  .dropdown:hover .dropbtn {background-color: #3e8e41; font-weight:bold;}
-.current{background-color: #3e8e41;
-    color:white;
-    font-weight:bold;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-footer {
-  position:relative;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.logo {
+  height: 70%;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+header ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+  font-weight: bold;
+}
+.current {
+  background-color: #3e8e41;
+  color: white;
+  font-weight: bold;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.kamufooter {
+  position: relative;
+
   background-color: #777;
   padding: 10px;
   text-align: center;
   color: white;
-  margin-left:-10px;
-  width:100%;
-  height:10%;
+  margin-left: -10px;
+  width: 100%;
 }
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
-.logo{
-  float:right;
+.logo {
+  float: right;
 }
-.wrapper{
-  background-color:rgb(197, 192, 192);
-  height:100%;
-  position:relative;
+.wrapper {
+  background-color: rgb(197, 192, 192);
+  height: 100%;
+  position: relative;
 }
-#xd{
-  background-color:white;
-  height:100vh;
+#xd {
+  background: url("../cs.png") center center / cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nezdmeg {
+  margin-top: 30px;
+  color: red;
+}
+
+#farara {
+  background: url("../love.png") 75% center / cover no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #0f0;
+  text-shadow: 2px 2px #00f;
+}
+
+#farara h1 {
+  padding: 20px;
+  background:rgba(111,111,111,0.8);
+  border-radius:1%;
+  width:100%;
+  
+}
+#farara h2{
+  color:green;
+  background:rgba(111,111,111,0.8);
+  border-radius:1%;
+
+}
+#farara p {
+  padding: 20px;
+  background:rgba(111,111,111,0.8);
+  border-radius:1%;
+  width:100%;
+  
+}
+
+iframe {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  #teto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #teto .dropdown {
+    margin: 10px 0;
+    width: 90%;
+  }
+  #teto button {
+    width: 100%;
+  }
 }

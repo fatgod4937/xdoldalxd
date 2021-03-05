@@ -65,13 +65,10 @@ header ul li {
 
 .kamufooter {
   position: relative;
-
   background-color: #777;
   padding: 10px;
   text-align: center;
-  color: white;
-  margin-left: -10px;
-  width: 100%;
+  color: #f7e7e7;
 }
 html,
 body {
